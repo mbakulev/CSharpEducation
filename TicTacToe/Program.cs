@@ -2,6 +2,11 @@
 
 class Program
 {
+	public string xWin = "X Win";
+	public string oWin = "O Win";
+
+	public string rulesCoordinates = "Нужно ввести данные в правильном формате  \"x y\"";
+
     static void ShowBoard(ref char[,] array)
     {
         for (int i = 0; i < 3; i++)
@@ -20,53 +25,50 @@ class Program
         {
             if (array[i, 0] == array[i, 1] && array[i, 1] == array[i, 2] && array[i, 2] == 'X')
             {
-                Console.WriteLine("X Win");
+                Console.WriteLine(xWin);
                 return true;
             }
 
             if (array[i, 0] == array[i, 1] && array[i, 1] == array[i, 2] && array[i, 2] == 'O')
             {
-                Console.WriteLine("O Win");
+                Console.WriteLine(oWin);
                 return true;
             }
-        }
-        
-        for (int i = 0; i < 3; i++)
-        {
+    
             if (array[0, i] == array[1, i] && array[1, i] == array[2, i] && array[2, i] == 'X')
             {
-                Console.WriteLine("X Win");
+                Console.WriteLine(xWin);
                 return true;
             }
 
             if (array[0, i] == array[1, i] && array[1, i] == array[2, i] && array[2, i] == 'O')
             {
-                Console.WriteLine("O Win");
+                Console.WriteLine(oWin);
                 return true;
             }
         }
 
         if (array[0, 0] == array[1, 1] && array[1, 1] == array[2, 2] && array[2, 2] == 'X')
         {
-            Console.WriteLine("X Win");
+            Console.WriteLine(xWin);
             return true;
         }
 
         if (array[0, 0] == array[1, 1] && array[1, 1] == array[2, 2] && array[2, 2] == 'O')
         {
-            Console.WriteLine("O Win");
+            Console.WriteLine(oWin);
             return true;
         }
 
         if (array[0, 2] == array[1, 1] && array[1, 1] == array[2, 0] && array[2, 0] == 'X')
         {
-            Console.WriteLine("X Win");
+            Console.WriteLine(xWin);
             return true;
         }
 
         if (array[0, 2] == array[1, 1] && array[1, 1] == array[2, 0] && array[2, 0] == 'O')
         {
-            Console.WriteLine("O Win");
+            Console.WriteLine(oWin);
             return true;
         }
 
@@ -108,14 +110,14 @@ class Program
             
             if (string.IsNullOrWhiteSpace(coordinateString))
             {
-                Console.WriteLine("Нужно ввести данные в правильном формате  \"x y\"");
+                Console.WriteLine(rulesCoordinates);
                 continue;
             }
             
             corrdinates = coordinateString.Split(' ');
             if (corrdinates.Length != 2)
             {
-                Console.WriteLine("Нужно ввести данные в правильном формате  \"x y\"");
+                Console.WriteLine(rulesCoordinates);
                 continue;
             }
             
