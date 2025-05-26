@@ -4,6 +4,8 @@ class Program
 {
 	public string xWin = "X Win";
 	public string oWin = "O Win";
+	public int firstIndex = 0;
+	public int lastIndex = 2;
 
 	public string rulesCoordinates = "Нужно ввести данные в правильном формате  \"x y\"";
 
@@ -126,7 +128,7 @@ class Program
             x = int.Parse(corrdinates[0]);
             y = int.Parse(corrdinates[1]);
             
-            if (x < 0 || x > 2 || y < 0 || y > 2)
+            if (x < firstIndex || x > lastIndex || y < firstIndex || y > lastIndex)
             {
                 Console.WriteLine("Координаты должны быть в диапазоне от 0 до 2.");
                 continue;
