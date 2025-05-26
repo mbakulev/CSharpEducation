@@ -6,6 +6,7 @@ class Program
 	public string oWin = "O Win";
 	public int firstIndex = 0;
 	public int lastIndex = 2;
+	public const int DefaultCoordinateValue = -1;
 
 	public string rulesCoordinates = "Нужно ввести данные в правильном формате  \"x y\"";
 
@@ -103,8 +104,8 @@ class Program
         string coordinateString = null;
         bool isCoordinatesCorrect = true;
         string[] corrdinates;
-        x = -1;
-        y = -1;
+        x = DefaultCoordinateValue;
+        y = DefaultCoordinateValue;
         while(true)
         {
             Console.WriteLine("Введи ход в формате \"x y\"");
@@ -178,8 +179,8 @@ class Program
         {
             if (order) Console.WriteLine("Ходит игрок " + playerOne);
             if (!order) Console.WriteLine("Ходит игрок " + playerTwo);
-            int x = -1;
-            int y = -1;
+            int x = DefaultCoordinateValue;
+            int y = DefaultCoordinateValue;
             
             InputMoveCoordinates(out x, out y);
             Console.WriteLine(x + " " + y);
