@@ -20,6 +20,7 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+*.obj
 
 # Visual Studio 2019/2022 cache/options directory
 .vs/
