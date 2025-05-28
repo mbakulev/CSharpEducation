@@ -6,7 +6,7 @@ namespace PhoneBook;
 public class PhoneBook
 {
     private static PhoneBook instance;
-    private const string FilePath = "phonebook.txt";
+    private const string FilePath = "../../phonebook.txt";
     private List<Abonent> abonents;
     private PhoneBook()
     {
@@ -48,6 +48,7 @@ public class PhoneBook
     {
         if (IsPhoneNumberUsed(abonent.PhoneNumber)) return;
         abonent.Id = GetNextId();
+        abonents.Add(abonent);
         File.AppendAllText(FilePath, abonent.ToDataString() + Environment.NewLine);
     }
     
@@ -56,17 +57,15 @@ public class PhoneBook
         return abonents.Any(a => a.PhoneNumber == phoneNumber);
     }
 
-    public Abonent FindByFullNAmeAbonent(string fullName)
+    public List<Abonent> ReadAll()
     {
-        var index = abonents.FindIndex(a => a.FullName == fullName);
-        if (index != -1)
-        {
-            return abonents[index];
-        }
-        else
-        {
-            return null;
-        }
+        return abonents;
+    }
+    
+    public List<Abonent> FindByFullNAmeAbonent(string fullName)
+    {
+        List<Abonent> result = abonents.FindAll(a => a.FullName == fullName);
+        return result;
     }
     
     public Abonent FindByNumberAbonent(string number)
