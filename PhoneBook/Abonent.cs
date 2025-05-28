@@ -5,11 +5,11 @@ namespace PhoneBook;
 /// </summary>
 public class Abonent
 {
-    private int Id { get; set; }
-    private string FullName { get; set; }
-    private string PhoneNumber { get; set; }
+    public int Id { get; set; }
+    public string FullName { get; set; }
+    public string PhoneNumber { get; set; }
     
-    private static int AbonentCount = 0;
+    public static int AbonentCount = 0;
 
     private void IncrementAbonentCount()
     {
