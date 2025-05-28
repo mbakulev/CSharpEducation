@@ -20,4 +20,20 @@ public class Abonent
     {
         return AbonentCount;
     }
+    
+    public string ToDataString()
+    {
+        return $"{Id}|{FullName}|{PhoneNumber}";
+    }
+    
+    public static Abonent FromDataString(string data)
+    {
+        var splittedStrings = data.Split('|');
+        return new Abonent
+        {
+            Id = int.Parse(splittedStrings[0]),
+            FullName = splittedStrings[1],
+            PhoneNumber = splittedStrings[2],
+        };
+    }
 }
