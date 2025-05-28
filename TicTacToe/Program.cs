@@ -1,14 +1,15 @@
 ﻿namespace TicTacToe;
+using System;
 
 class Program
 {
-	public string xWin = "X Win";
-	public string oWin = "O Win";
-	public int firstIndex = 0;
-	public int lastIndex = 2;
-	public const int DefaultCoordinateValue = -1;
+	static public string xWin = "X Win";
+	static public string oWin = "O Win";
+    static public int firstIndex = 0;
+    static public int lastIndex = 2;
+    public const int DefaultCoordinateValue = -1;
 
-	public string rulesCoordinates = "Нужно ввести данные в правильном формате  \"x y\"";
+    static public string rulesCoordinates = "Нужно ввести данные в правильном формате  \"x y\"";
 
     static void ShowBoard(ref char[,] array)
     {
