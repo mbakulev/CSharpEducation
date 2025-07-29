@@ -5,7 +5,7 @@ class Program
     static EmployeeManager<Employee> manager = new EmployeeManager<Employee>();
     static void Main(string[] args)
     {
-          while (true)
+        while (true)
         {
             Console.WriteLine("\n");
             Console.WriteLine("1. Добавить сотрудника, работающего полный день");
