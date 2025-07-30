@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{2B74E5C3-C553-4582-A7B1-EE85ADF3C5D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBook", "PhoneBook\PhoneBook.csproj", "{947C2AEA-DDD5-44BE-BAA7-BC8DADD327A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B74E5C3-C553-4582-A7B1-EE85ADF3C5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B74E5C3-C553-4582-A7B1-EE85ADF3C5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B74E5C3-C553-4582-A7B1-EE85ADF3C5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B74E5C3-C553-4582-A7B1-EE85ADF3C5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800F2B27-5702-4A91-ADD9-F59B50D461E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800F2B27-5702-4A91-ADD9-F59B50D461E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800F2B27-5702-4A91-ADD9-F59B50D461E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800F2B27-5702-4A91-ADD9-F59B50D461E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0B3C5C-539C-4DA6-AEF4-44F3306ED0B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0B3C5C-539C-4DA6-AEF4-44F3306ED0B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0B3C5C-539C-4DA6-AEF4-44F3306ED0B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0B3C5C-539C-4DA6-AEF4-44F3306ED0B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{212B3FA3-79FB-4471-B98D-815A59AA1628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212B3FA3-79FB-4471-B98D-815A59AA1628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212B3FA3-79FB-4471-B98D-815A59AA1628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212B3FA3-79FB-4471-B98D-815A59AA1628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{947C2AEA-DDD5-44BE-BAA7-BC8DADD327A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{947C2AEA-DDD5-44BE-BAA7-BC8DADD327A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{947C2AEA-DDD5-44BE-BAA7-BC8DADD327A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{947C2AEA-DDD5-44BE-BAA7-BC8DADD327A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
